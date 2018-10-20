@@ -7,15 +7,16 @@ Estructura para proyecto PHP usando el patrón MVC.
   - ***/ app***			
     - / models	
     - / controlles		
-    - / views		
-    - constantes.php		
+    - / views
+      - / html
+      - / assets		
+        - / css			
+        - / js		
+        - / ajax			
+        - / imges				
+    - app.constantes.php		
   - ***/ libs***		
-  - ***/ site***		
-    - / html		
-    - / css			
-    - / js		
-    - / ajax			
-    - / imges			
+  - ***/ test***			
   - ***index.php***
 
 ### Descripciones
@@ -27,10 +28,12 @@ Estructura para proyecto PHP usando el patrón MVC.
   - / controllers: Ficheros controladores. Pe: 
     
   - / views: Ficheros correspondientes a las vistas.
+    - /html: Contiene las plantillas html o embebidas.
+    - /assets : Contiene todos los recursos CSS,JS,FONTS,etc
     
   - *constantes.php*: Fichero que contine las constantes que se usarán a lo largo del proyecto.		
     
-2. **/ libs**: Directorio de librería, plugins, etc.
+2. **/ lib**: Directorio de librería, plugins, etc.
 
 3. **/ site**: Directorio dedicado al FrontEnd, ficheros estáticos, plantillas, estilos.
 
