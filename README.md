@@ -2,48 +2,40 @@
 Estructura para proyecto PHP usando el patrón MVC.
 
 ## Estructura de proyecto
-
-- **MVC_Proyecto** 
-  - ***/ app***			
-    - / models	
-    - / controlles		
-    - / views
-      - / html
-      - / assets		
-        - / css			
-        - / js		
-        - / ajax			
-        - / imges				
-    - app.constantes.php		
-  - ***/ libs***		
-  - ***/ test***			
-  - ***index.php***
+```
+├───app
+│   ├───config
+│   ├───controllers
+│   ├───models
+│   └───views
+│       ├───assets
+│       │   ├───css
+│       │   ├───fonts
+│       │   ├───images
+│       │   └───js
+│       ├───layouts
+│       └───templates
+├───lib
+└───test
+```
 
 ### Descripciones
 
 1. **/ app**: Directorio con todo lo referente al proyecto, núcleo, MVC propiamente dicho.
 
-  - / models: Ficheros correspondientes al modelo. Pe: demo.class.php
-    
+  - / config: Guarda todos los archivos necesarios para configurar la aplicación. P.e: Constantes o variables globales.
   - / controllers: Ficheros controladores. Pe: 
-    
+  - / models: Ficheros correspondientes al modelo. Pe: demo.class.php
   - / views: Ficheros correspondientes a las vistas.
-    - /html: Contiene las plantillas html o embebidas.
     - /assets : Contiene todos los recursos CSS,JS,FONTS,etc
+    - /layouts: Contiene los layouts.
+    - /templates: Contiene las plantillas html o embebidas.
     
   - *constantes.php*: Fichero que contine las constantes que se usarán a lo largo del proyecto.		
     
-2. **/ lib**: Directorio de librería, plugins, etc.
-
-3. **/ site**: Directorio dedicado al FrontEnd, ficheros estáticos, plantillas, estilos.
-
-  - / html: Plantillas html, módulos, etc.		
-  - / css: Hojas de estilos.			
-  - / js: Ficheros JavaScript. 		
-  - / ajax: Ficheros referentes a AJAX.			
-  - / images: Imágenes del proyecto
+2. **/ lib**: Directorio de librerías, plugins, etc.
   
-4. ***index.php***: Fichero raíz del proyecto que servirá como despachador.
+3. ***index.php***: Fichero raíz del proyecto que servirá como despachador.
 
 ### NOTA:
-Los ficheros contenidos en los diferentes directorios como **demo-<titulo>.<extensión>**, son netamente referenciales.
+Los ficheros contenidos en los diferentes directorios como **demo-<titulo>.<extensión>**, son referenciales.
